@@ -34,4 +34,8 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set cindent
+set colorcolumn=80
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+set cursorline
+highlight CursorLine ctermbg=236 cterm=None
 syntax on
