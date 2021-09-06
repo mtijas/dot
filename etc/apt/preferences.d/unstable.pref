@@ -1,0 +1,7 @@
+Package: *
+Pin: release n=sid
+Pin-Priority: 100
+
+Package: liblldb-7
+Pin: release n=buster
+Pin-Priority: 100
