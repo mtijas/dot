@@ -1,0 +1,35 @@
+# Apply correct dpi for monitors
+exec_always --no-startup-id xrandr --output DP-0 --dpi 110
+#exec_always --no-startup-id xrandr --output HDMI-0 --dpi 110 # 222
+
+# Custom workspace configs
+workspace 1 output primary
+workspace 9 output HDMI-0
+
+bar {
+    position top
+    
+    colors {
+        background #111111
+        statusline #DDDDDD
+        separator  #656565
+
+        focused_workspace  #B23D08 #8E3106 #FFFFFF
+        active_workspace   #1B1B1B #1B1B1B #FFFFFF
+        inactive_workspace #1B1B1B #1B1B1B #888888
+        urgent_workspace   #2F343A #D8A900 #FFFFFF
+        binding_mode       #2F343A #D8A900 #FFFFFF
+    }
+
+    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    font pango:DejaVu Sans Mono 11
+
+    output HDMI-0
+    tray_output none
+    status_command i3status --config ~/.config/i3status/bluecloud
+    i3bar_command i3bar
+    separator_symbol "  "
+}
+
+exec_always --no-startup-id numlockx on
+exec_always --no-startup-id ~/bluecloud-touch.sh
