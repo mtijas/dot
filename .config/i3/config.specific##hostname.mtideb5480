@@ -1,0 +1,6 @@
+# Apply correct dpi for monitors
+exec_always --no-startup-id xrandr --output eDP-1 --dpi 158
+
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 5%+
+
