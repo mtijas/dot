@@ -20,7 +20,10 @@ font pango:DejaVu Sans Mono 11
 font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
 font pango:Terminus 15px
 
+default_border normal
+default_floating_border normal
 hide_edge_borders both
+floating_minimum_size 75 x 50
 
 # Assign programs to workspaces
 assign [class="discord"] 9
@@ -206,7 +209,7 @@ bindsym Print exec "xfce4-screenshooter"
 
 # Colorize i3
 # class                 border  bground text    indicator child_border
-client.focused          #8E3106 #8E3106 #FFFFFF #8E3106   #8E3106
+client.focused          #080808 #101010 #FFFFFF #080808   #080808
 client.focused_inactive #1B1B1B #5F676A #FFFFFF #484E50   #5F676A
 client.unfocused        #1B1B1B #1B1B1B #888888 #292D2E   #1B1B1B
 client.urgent           #2F343A #D8A900 #FFFFFF #FFC800   #FFC800
@@ -247,3 +250,5 @@ exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/nasa-yZygONrUBe8-unspla
 
 exec --no-startup-id nextcloud
 exec --no-startup-id protonmail-bridge
+
+exec --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
