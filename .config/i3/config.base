@@ -243,7 +243,7 @@ bar {
     separator_symbol "  "
 }
 
-exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/*
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/nasa-yZygONrUBe8-unsplash.jpg
 
 exec --no-startup-id nextcloud
 exec --no-startup-id protonmail-bridge
