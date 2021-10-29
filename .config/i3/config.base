@@ -28,8 +28,9 @@ floating_minimum_size 75 x 50
 # Assign programs to workspaces
 assign [class="discord"] 9
 assign [class="Telegram"] 9
+assign [class="element"] 9
 assign [class="zoom"] 7
-assign [class="teams"] 8
+assign [class="microsoft teams - preview"] 8
 
 # Default floats for programs
 for_window [class="calculator"] floating enable
