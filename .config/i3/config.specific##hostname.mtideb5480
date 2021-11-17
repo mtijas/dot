@@ -18,7 +18,7 @@ bar {
         binding_mode       #EC5F67 #EC5F67 #1B1B1B
     }
 
-    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
     font pango:DejaVu Sans Mono 13
     
     output primary
