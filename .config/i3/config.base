@@ -252,4 +252,3 @@ exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/nasa-yZygONrUBe8-unspla
 exec --no-startup-id nextcloud
 exec --no-startup-id protonmail-bridge
 
-# exec --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
