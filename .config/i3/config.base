@@ -220,33 +220,6 @@ client.background       #1B1B1B
 
 bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#1B1B1B' -sf '#1B1B1B' -sb '#93D393' -fn 'monospace-10' -p 'dmenu >'"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-    position top
-    
-    colors {
-        background #111111
-        statusline #DDDDDD
-        separator  #656565
-
-        focused_workspace  #1B1B1B #93D393 #1B1B1B
-        active_workspace   #1B1B1B #222222 #FFFFFF
-        inactive_workspace #1B1B1B #222222 #888888
-        urgent_workspace   #EC5F67 #EC5F67 #1B1B1B
-        binding_mode       #EC5F67 #EC5F67 #1B1B1B
-    }
-
-    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-    font pango:DejaVu Sans Mono 11
-    
-    output primary
-    tray_output primary
-    status_command i3status
-    i3bar_command i3bar
-    separator_symbol "  "
-}
-
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/nasa-yZygONrUBe8-unsplash.jpg
 
 exec --no-startup-id nextcloud

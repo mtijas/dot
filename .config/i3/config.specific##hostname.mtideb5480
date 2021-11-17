@@ -1,6 +1,33 @@
 # Apply correct dpi for monitors
 exec_always --no-startup-id xrandr --output eDP-1 --dpi 158
 
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+    position top
+    
+    colors {
+        background #111111
+        statusline #DDDDDD
+        separator  #656565
+
+        focused_workspace  #1B1B1B #93D393 #1B1B1B
+        active_workspace   #1B1B1B #222222 #FFFFFF
+        inactive_workspace #1B1B1B #222222 #888888
+        urgent_workspace   #EC5F67 #EC5F67 #1B1B1B
+        binding_mode       #EC5F67 #EC5F67 #1B1B1B
+    }
+
+    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    font pango:DejaVu Sans Mono 11
+    
+    output primary
+    tray_output primary
+    status_command i3status
+    i3bar_command i3bar
+    separator_symbol "  "
+}
+
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 5%+
 
